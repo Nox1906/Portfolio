@@ -1,4 +1,4 @@
-import sanityClient from '@sanity/client';
+import {createClient as sanityClient} from '@sanity/client';
 import imageUrlBuilder from '@sanity/image-url';
 
 export const client = sanityClient({
@@ -7,6 +7,7 @@ export const client = sanityClient({
   apiVersion: '2023-02-27',
   useCdn: true,
   token: process.env.REACT_APP_SANITY_TOKEN, 
+  ignoreBrowserTokenWarning: true
 });
 
 const builder = imageUrlBuilder(client);
