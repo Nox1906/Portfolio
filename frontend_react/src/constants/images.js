@@ -37,7 +37,7 @@ import spotify from '../assets/spotify.png';
 import dotnet from '../assets/dotnet.png';
 import linkedin from '../assets/linkedin.png';
 
-export default {
+const images = {
     email,
     mobile,
     api,
@@ -74,3 +74,5 @@ export default {
     dotnet,
     linkedin,
 };
+
+export default images;
