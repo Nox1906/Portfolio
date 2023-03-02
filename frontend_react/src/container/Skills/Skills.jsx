@@ -65,7 +65,7 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4><p className="p-text">{work.company}</p>
+                      <h3 className="bold-text">{work.name}</h3><h4 className="p-text">{work.company}</h4>
                       <p className="p-text">{work.desc}</p>
                     </motion.div>
                   </>
